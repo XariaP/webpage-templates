@@ -84,3 +84,79 @@ button:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
 }
+
+
+.card {
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid #1db154;
+    border-left-color:var(--primary-color);
+    border-top-color:var(--primary-color);
+    border-right-color:var(--secondary-color);
+    border-bottom-color:var(--secondary-color);
+    width: 50%;
+    height: max-content;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+
+@media screen and (max-width: 800px) {
+    .card {
+        /* aligns nicely */
+        align-items: center; 
+        flex-direction: column;
+    }
+    .info {
+        text-align: center;
+    }
+  }
+
+
+.avatar {
+    /* float: right; */
+    border: 2px solid #1db154;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#1db154, palegreen, white);
+    object-fit: cover;
+    object-position: 0 -60px;
+}
+
+.visual {
+    position: relative;
+    height: max-content;
+    /* top: -20px; */
+}
+
+.visual p {
+    /* margin: auto; */
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background-color: #23bba95d;
+    border: 1px solid #1db154;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.bubble-group {
+    display: flex;
+    margin: 0px;
+    justify-content: space-around;
+}
+
+.bubble-group p {
+    width: max-content;
+    padding: 2px 10px;
+    background-color: #64e6d75d;
+}
+
+.bubble-group p:hover{
+    cursor: pointer;
+    background-color: #23bba95d;
+}
