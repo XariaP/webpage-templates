@@ -1,0 +1,76 @@
+.container {
+    position: relative;
+    /* animation: square_scale 1s 0s ease infinite alternate; */
+    /* width: 30px; */
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    /* width: 100%; */
+    /* column-gap: 30px; */
+    margin: auto;
+    
+}
+
+.container + p {
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    /* text-align: center; */
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 247, 255);
+    font-weight: bold;
+}
+
+body {
+    background-color: rgba(202, 194, 194, 0.397);
+    color: white;
+}
+
+.bar {
+    background-color:rgba(110, 158, 180, 0.726);
+    /* padding: 0%; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* flex-direction: row-reverse; */
+    /* background-color: rgb(169, 227, 227); */
+    /* height: 3rem; */
+    /* vertical-align: middle; */
+    /* margin: auto; */
+}
+.square {
+    background-color: rgb(30, 133, 250);
+    /* height: 50px; */
+    /* width: 50px; */
+    height: 10px;
+    width: 10px;
+    /* position: absolute; */
+    animation: square_scale 1s 0s ease infinite alternate;
+}
+
+#two {
+    background-color: blue;
+    /* z-index: 100px; */
+    /* position: absolute; */
+    /* top: 10px; */
+    /* left: 20px; */
+}
+
+#three {
+    background-color: rgb(0, 195, 255);
+    /* z-index: 100px; */
+    /* position: absolute; */
+    /* top: 20px; */
+    /* left: 40px; */
+}
+
+@keyframes square_scale {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
