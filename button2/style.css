@@ -1,0 +1,74 @@
+.container {
+    /* position: relative; */
+    /* animation: square_scale 1s 0s ease infinite alternate; */
+    /* width: 30px; */
+}
+
+body {
+    background-color: white;
+    /* black; */
+    color: white;
+    /* width: 100%; */
+    margin: 0;
+}
+
+button {
+    background-color: linear-gradient();
+    border: 1px solid green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.bar {
+    display: flex;
+    /* justify-content: space-around; */
+    /* padding: 20px; */
+    /* width: 100%; */
+    vertical-align: middle;
+    height: 3rem;
+    margin: 0px;
+    background-color: rgb(154, 175, 168);
+    /* flex-direction: row-reverse; */
+    /* background-color: rgb(169, 227, 227); */
+    /* height: 3rem; */
+    /* vertical-align: middle; */
+    /* margin: auto; */
+}
+.square {
+    background-color: rgb(30, 133, 250);
+    /* height: 50px; */
+    /* width: 50px; */
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    animation: square_scale 1s 0s ease infinite alternate;
+}
+
+#two {
+    background-color: blue;
+    /* z-index: 100px; */
+    position: absolute;
+    /* top: 10px; */
+    left: 20px;
+}
+
+#three {
+    background-color: rgb(0, 195, 255);
+    /* z-index: 100px; */
+    position: absolute;
+    /* top: 20px; */
+    left: 40px;
+}
+
+@keyframes square_scale {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
