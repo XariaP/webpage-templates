@@ -1,0 +1,85 @@
+<HTML>
+    <HEAD>
+        <TITLE> Xaria Prempeh </TITLE>
+        <link rel="icon" type="image/x-icon" href="icons/icon1.jpg">
+        <link rel='stylesheet' href='styles.css'>
+    </HEAD>
+
+    <BODY class="bg1">
+        <!-- TITLE -->
+        <div class="titleBar" style="border-radius: 100px 100px 0 0;">
+            <div class="titleBar" style="border-radius: 0 0 100px 100px;">
+                <div style="text-align: center; margin: 20px;"> <br> Xaria Prempeh </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- MENU BAR -->
+        <div class="line">
+            <div class="circleLine L"> </div>
+            <div class="circleLine L"> </div>
+        </div>
+
+        <div class="line">
+            <div class="circleLine R"> </div>
+            <div class="circleLine R"> </div>
+        </div>
+
+        <div class="menu" align="center"> </div>
+
+        <!-- CONTENT -->
+        <div class="contentBox">
+            <br>
+            <div style="width: 200px; margin: auto; text-align: center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h2 id="boxTitle"> About Me </h2>
+                <img onclick='changeBG()' id="boxIcon" src="images/icons/icon1.jpg" style="height: 100px; width: 100px; border-radius: 100%;">
+            </div>
+            <br>
+
+            <div id="About Me">
+                <span style="text-align: center;">
+                    <p>Xaria Adjoa Kianna Prempeh</p>
+                    <p>2nd July, 2001</p>
+                    <p>Barbados</p>
+                </span>
+            </div>
+    
+            <div id="Projects">
+                <div style="margin: auto; width: max-content; display: block; border-radius: 50px;">
+                    <button class="menuButton" onclick="zoomImage('out')">-</button>
+                    <button class="menuButton" onclick="changeImages()">Next Project</button>
+                    <button class="menuButton" onclick="zoomImage('in')">+</button>
+                </div>
+            </div>
+
+            <div id="Resume" style="text-align: center">
+                <iframe src="Resume May 2023.pdf" width="80%" height="400px" frameborder="0">
+                    This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
+                </iframe>
+            </div>
+
+            <br><br>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+        
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+        
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <p style="text-align: center;">2022</p>
+        
+        <br>
+
+        <script src="script.js"></script>
+
+    </BODY>
+</HTML>
