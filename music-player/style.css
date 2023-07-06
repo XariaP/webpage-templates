@@ -18,7 +18,12 @@ body {
     cursor: pointer;
 }
 
-.block-item:hover {
+.block-item#selected{
+    color: rgb(188, 14, 188);
+    background: linear-gradient(-90deg, rgb(62, 1, 62), rgb(29, 29, 29));
+}
+
+.block-item:hover{
     /* color: rgb(191, 0, 255); */
     color: rgb(188, 14, 188);
     background: linear-gradient(-90deg, purple, rgb(29, 29, 29));
@@ -29,6 +34,8 @@ body {
 .block-item:last-child:hover {
     border-bottom-right-radius: 10px;
 }
+
+
 
 .container {
     display: grid;
@@ -42,7 +49,7 @@ body {
     grid-area: main;
 }
 
-.title {
+#title {
     font-size: 20px;
 }
 

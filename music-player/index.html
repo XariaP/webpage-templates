@@ -7,6 +7,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/a373bb7050.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -23,26 +24,26 @@
             </div>
             
             <div class="block menu2">
-                <div class="block-item">
+                <div class="block-item" onclick="selectItem(1)" id="selected">
                     Item 1
                 </div>
-                <div class="block-item">
+                <div class="block-item" onclick="selectItem(2)">
                     Item 2
                 </div>
-                <div class="block-item">
+                <div class="block-item" onclick="selectItem(3)">
                     Item 3
                 </div>
-                <div class="block-item">
+                <div class="block-item" onclick="selectItem(4)">
                     Item 4
                 </div>
-                <div class="block-item">
+                <div class="block-item" onclick="selectItem(5)">
                     Item 5
                 </div>
             </div>
 
             <div class="block main">
                 <div id="content1">
-                    <span class="title">
+                    <span id="title">
                         Item 1
                     </span>
                 </div>
