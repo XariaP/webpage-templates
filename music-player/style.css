@@ -3,6 +3,7 @@ body {
     color: white;
     /* height: 100vh; */
     margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .block {
@@ -47,6 +48,7 @@ body {
 
 .main {
     grid-area: main;
+    height: fit-content;
 }
 
 #title {
@@ -56,17 +58,57 @@ body {
 #content1 {
     background: linear-gradient(purple, rgb(29, 29, 29));
     text-align: center;
-    height: 25%;
+    /* height: 25%; */
     border-radius: 10px;
     line-height: 4rem;
+    margin-bottom: 20px;
+
 }
+
+#content1 img {
+    /* margin: 10px; */
+    margin: auto;
+    /* padding: 20px; */
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    border-radius: 25%;
+}
+
+/* .tracklist {
+
+} */
+
+.track {
+    background-color: rgb(50, 49, 49);
+    /* background: linear-gradient(90deg, rgb(29, 29, 29), rgb(50, 49, 49)); */
+    height: 3rem;
+    display: block;
+    line-height: 3rem;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* .track:last-child {
+    border-radius: 10px;
+} */
+
+/* .shadow {filter: drop-shadow(8px 8px 10px purple);} */
+/* .saturate {filter: saturate(7);} */
+/* .blur {filter: blur(4px);} */
+
+.grayscale {filter: grayscale(100%);}
 
 .menu {
     grid-area: menu;
+    height: fit-content;
 }
 
 .menu2 {
     grid-area: menu2;
+    height: fit-content;
 }
 
 #footer {

@@ -7,4 +7,6 @@ function selectItem(num){
     document.getElementsByClassName("block-item")[2 + num - 1].setAttribute("id", "selected");
     lastSelected = num - 1;
     document.getElementById("title").innerHTML = "Item " + num;
+
+    document.getElementById("photo").setAttribute("src", "./images/pic" + num + ".jpg");
 }
