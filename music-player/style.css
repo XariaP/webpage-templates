@@ -1,9 +1,15 @@
 body {
     background-color: black;
     color: white;
-    /* height: 100vh; */
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background: linear-gradient( rgb(64, 2, 73), rgb(0, 0, 0));
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
 }
 
 .block {
@@ -13,7 +19,7 @@ body {
 }
 
 .block-item {
-    color: lightgray;
+    color: white;
     line-height: 50px;
     margin-left: 20px;
     cursor: pointer;
@@ -29,19 +35,32 @@ body {
     color: rgb(188, 14, 188);
     background: linear-gradient(-90deg, purple, rgb(29, 29, 29));
 }
-.block-item:first-child:hover {
+
+.block-item:first-child#selected, .block-item:first-child:hover {
     border-top-right-radius: 10px;
 }
-.block-item:last-child:hover {
+
+.block-item#selected:last-child, .block-item:last-child:hover {
     border-bottom-right-radius: 10px;
 }
 
+#control-panel {
+    text-align: center;
+}
 
+.control {
+    margin: 10px;
+}
+
+.control:hover {
+    color: purple;
+    cursor: pointer;
+}
 
 .container {
     display: grid;
-    grid-template-areas: 'menu main main'
-                        'menu2 main main';
+    grid-template-areas: 'side main main'
+                         'side main main';
     height: 100%;
     margin: 4px;
 }
@@ -58,7 +77,6 @@ body {
 #content1 {
     background: linear-gradient(purple, rgb(29, 29, 29));
     text-align: center;
-    /* height: 25%; */
     border-radius: 10px;
     line-height: 4rem;
     margin-bottom: 20px;
@@ -66,19 +84,19 @@ body {
 }
 
 #content1 img {
-    /* margin: 10px; */
     margin: auto;
-    /* padding: 20px; */
     display: block;
     width: 150px;
     height: 150px;
     object-fit:cover;
     border-radius: 25%;
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
 }
 
-/* .tracklist {
-
-} */
+.text {
+    text-align: center;
+    padding: 10px;
+}
 
 .track {
     background-color: rgb(50, 49, 49);
@@ -91,6 +109,21 @@ body {
     border-radius: 10px;
 }
 
+.track:hover {
+    /* background-color: purple; */
+    background: linear-gradient(90deg, rgb(64, 2, 73), purple);
+    cursor: pointer;
+}
+
+.track:not(:hover) i {
+    display: none;
+}
+
+.track:hover i {
+    display: inline;
+    margin-right: 4px;
+}
+
 /* .track:last-child {
     border-radius: 10px;
 } */
@@ -101,13 +134,16 @@ body {
 
 .grayscale {filter: grayscale(100%);}
 
+.sidebar {
+    grid-area: side;
+}
+
 .menu {
-    grid-area: menu;
     height: fit-content;
+    margin-bottom: 8px;
 }
 
 .menu2 {
-    grid-area: menu2;
     height: fit-content;
 }
 

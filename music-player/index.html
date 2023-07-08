@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Menu 1 </title>
+        <title> Music Player </title>
         <link rel="icon" type="image/x-icon" href="favicon.jpg">
         <link rel='stylesheet' href='style.css'>
         
@@ -10,62 +10,84 @@
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
+
+        <div class="block header">
+            <span style="color: lightgray;"> Listening to... </span>
+            <span id="track-name"> Track #1 </span>
+            <span style="color: lightgray;"> by </span>
+            <span id="track-artist"> Artist </span>
+        </div>
+
         <div class="container">
-            <div class="block menu">
-                <div class="block-item">
-                    <i class="fa-solid fa-house" style="color: #d6d6d6;"></i>
-                    Home
+            <div class="side">
+                <div class="block menu">
+                    <div class="block-item">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </div>
+                    <div class="block-item">
+                        <!-- Colour: R214 G214 B214 -->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </div>
                 </div>
-                <div class="block-item">
-                    <!-- Colour: R214 G214 B214 -->
-                    <i class="fa-solid fa-magnifying-glass" style="color: #d6d6d6;"></i>
-                    Search
+
+                <div class="block menu" id="control-panel">
+                    <i class="fa fa-step-backward control"></i>
+                    <span class="control">
+                        <i class="fa fa-pause" id="pause"></i>
+                        <!-- <i class="fa fa-play" id="play" onclick="play_track()"></i> -->
+                    </span>
+                    <i class="fa fa-step-forward control"></i>
                 </div>
+                
+                <div class="block menu2">
+                    <div class="block-item" onclick="selectItem(0)" id="selected">
+                        Album 1
+                    </div>
+                    <div class="block-item" onclick="selectItem(1)">
+                        Album 2
+                    </div>
+                    <div class="block-item" onclick="selectItem(2)">
+                        Album 3
+                    </div>
+                    <div class="block-item" onclick="selectItem(3)">
+                        Album 4
+                    </div>
+                    <div class="block-item" onclick="selectItem(4)">
+                        Album 5
+                    </div>
+                </div>
+
             </div>
             
-            <div class="block menu2">
-                <div class="block-item" onclick="selectItem(1)" id="selected">
-                    Item 1
-                </div>
-                <div class="block-item" onclick="selectItem(2)">
-                    Item 2
-                </div>
-                <div class="block-item" onclick="selectItem(3)">
-                    Item 3
-                </div>
-                <div class="block-item" onclick="selectItem(4)">
-                    Item 4
-                </div>
-                <div class="block-item" onclick="selectItem(5)">
-                    Item 5
-                </div>
-            </div>
 
             <div class="block main">
                 <div id="content1">
                     <span id="title">
-                        Item 1
+                        Album 1
                     </span>
                     <!-- <br> -->
                     <img class="grayscale" id="photo" src="./images/pic1.jpg">
                 </div>
 
+                <div class="text" id="description">
+                    Album | Artist | Year
+                </div>
+
                 <div class="tracklist">
-                    <div class="track">
-                        <!-- <button> -->
-                            <i class="fa fa-play"></i>
-                        <!-- </button> -->
+                    <div class="track" onclick="selectTrack(0, 0)">
+                        <i class="fa fa-play"></i>
                         Track #1
                     </div>
-                    <div class="track">
+                    <div class="track" onclick="selectTrack(0, 1)">
+                        <i class="fa fa-play"></i>
                         Track #2
                     </div>
-                    <div class="track">
+                    <div class="track" onclick="selectTrack(0, 2)">
+                        <i class="fa fa-play"></i>
                         Track #3
                     </div>
-                    <!-- <div class="track"> -->
-                        <!-- Track #5                    
-                    </div> -->
                 </div>
             </div>
         </div>
