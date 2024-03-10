@@ -1,0 +1,189 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path fill="#ffffff" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c.2 35.5-28.5 64.3-64 64.3H128.1c-35.3 0-64-28.7-64-64V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24zM352 224a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm-96 96c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H256z"/>
+            </svg>
+        </div>
+        <div class="search-bar">
+            <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="#19195ca0" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                </svg>
+            </div>
+            <!-- Search here... -->
+            <input type="text" id="search" name="search">
+                <!-- <label for="search">Search here...</label> -->
+            </input>
+        </div>
+        <div class="icon-button small">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </div>
+    </div>
+    <div class="content">
+        
+        <div class="page white">
+            <p class="title"> Site Title </p>
+            <div class="card">
+                <img src="intro-pic.jpg" />
+            </div>
+        </div>
+        <div class="page blue">
+            <div class="img-bg">
+f
+            </div>
+        </div>
+        <div class="page white">
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 0;
+        /* width: 100vw; */
+        /* position: relative; */
+        /* position: relative;
+        padding-top: 3rem; */
+        /* width: 100%;
+        height: 100%;
+        background-image: url(intro-pic.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+    }
+    .card {
+        width: 75%;
+        height: 50%;
+        background-color: rgba(184, 211, 241, 0.318);
+        border-top-left-radius: 250px;
+        border-bottom-right-radius: 250px;
+        border-radius: 100px;
+        border: 10px rgba(82, 143, 218, 0.527) solid;
+        overflow: hidden;
+        /* border-image: linear-gradient(150deg, rgba(82, 143, 218, 0.527), rgba(54, 54, 126, 0.627)); */
+        /* border-width: 10px;
+        border-style: solid; */
+
+        p {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .icon-button {
+        width: 35px;
+        margin: 5px;
+        /* flex: 1; */
+        &.small {
+            width: 25px;
+        }
+    }
+    .content {
+        margin-top: 3rem;
+    }
+    .navBar {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 3rem;
+        background-color: rgb(127, 185, 255);
+        background-color: rgba(25, 25, 92, 0.627);
+        background: linear-gradient(150deg, rgba(82, 143, 218, 0.527), rgba(54, 54, 126, 0.627));
+        position: fixed;
+        top: 0;
+        width: calc(100% - 20px);
+        /* border-bottom-left-radius: 50%; */
+        /* border-bottom-right-radius: 50%; */
+        /* opacity: 50%; */
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        justify-content:space-between;
+        z-index: 99;
+    }
+    .search-bar {
+        background-color: white;
+        width: 50%;
+        padding: 5px 10px;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin: 10px;
+        border-radius: 20px;
+        /* flex: 1; */
+        /* z-index: 99; */
+        text-align: center;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    #search {
+        width: 100%;
+        border: none;
+    }
+    .search-icon {
+        width: 18px;
+        padding: 0 10 0 0px;
+    }
+    .title {
+        font-size: 60px;
+        font-family:'Courier New', Courier, monospace
+    }
+    .page {
+        height: calc(100vh - 3rem);
+        /* height: calc(100vh); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        &.blue {
+            background-color: azure;
+            position: relative;
+            background-color: transparent;
+        }
+        
+        &.white {
+            background-color: white;
+            /* opacity: 0; */
+            /* background-color: transparent; */
+        }
+        /* opacity: 0px; */
+    }
+    /* .navBar:hover {
+        height: 5rem;
+    } */
+    .img-bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(intro-pic.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: fixed;
+        top: 3rem;
+        /* position: sticky; */
+        z-index: -1;
+    }
+</style>
+
+<script>
+
+</script>
