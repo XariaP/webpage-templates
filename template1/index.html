@@ -28,9 +28,15 @@
                     <path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
                 </svg>
             </div>
+            <div class="dropdown-menu">
+                <div class="dropdown-tab">Collection #1</div>
+                <div class="dropdown-tab sub">~ Photo #1</div>
+                <div class="dropdown-tab sub">~ Photo #2</div>
+                <div class="dropdown-tab">Collection #2</div>
+                <div class="dropdown-tab">Collection #3</div>
+            </div>
         </div>
-    <!-- </div> -->
-    <div class="content">
+    <!-- </div> -->    <div class="content">
         
         <div class="page white">
             <div class="header">
@@ -79,6 +85,7 @@
 <style>
     body {
         margin: 0;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         /* width: 100vw; */
         /* position: relative; */
         /* position: relative;
@@ -200,6 +207,29 @@
         align-items: center;
         justify-content:space-between;
         z-index: 99;
+    }
+    .dropdown-menu {
+        width: 25%;
+        height: 100vh;
+        background-color: white;
+        position: absolute;
+        right: 0px;
+        top: 3rem;
+        box-shadow: 5px 5px 25px black ;
+        /* z-index: 98; */
+    }
+    .dropdown-tab {
+        background-color: rgba(137, 43, 226, 0.199);
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        box-shadow: 1px 1px 5px rgb(255, 255, 255) inset;
+        /* font-size: 1.25rem; */
+        &.sub {
+            padding-left: 40px;
+            background-color: rgba(157, 243, 243, 0.5);
+        }
     }
     .search-bar {
         background-color: white;
